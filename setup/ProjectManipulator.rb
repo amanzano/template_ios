@@ -22,6 +22,7 @@ module Vivant
     def run
       @string_replacements = {
         "PROJECTNAME" => @projectname,
+        "USERNAME" => @username,
         "TODAY" => @today
       }
       replace_internal_project_settings
