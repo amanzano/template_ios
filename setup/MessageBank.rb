@@ -35,7 +35,7 @@ module Vivant
     def ask(question)
       answer = ""
       loop do
-        puts "\n#{question}"
+        puts "\n#{question}?"
 
         show_prompt
         answer = gets.chomp
@@ -69,8 +69,9 @@ module Vivant
     
     def pod_ask(question)
       answer = ""
+      condition = false
       loop do
-        puts "\n#{question}?"
+        puts "\n#{question}"
 
         show_prompt
         answer = gets.chomp
@@ -80,7 +81,7 @@ module Vivant
 
         print "\nYou need to provide an answer."
       end
-      answer
+      condition
     end
 
 	def pod_setup
@@ -94,30 +95,63 @@ module Vivant
       podfile.write("source 'https://github.com/CocoaPods/Specs.git'\n")
       podfile.write("platform :ios, '7.0'\n")
       
-      answer = pod_ask("Add pod AFNetworking?")
-      if answer == "y"
+      answer = pod_ask("Add AFNetworking?")
+      if answer == true
  	    podfile.write("pod 'AFNetworking', '~> 2.5'\n")
       end
       
-      answer = pod_ask("Add pod NSDate+TimeAgo?")
-      if answer == "y"
+      answer = pod_ask("Add DateTools?")
+      if answer == true
  	    podfile.write("pod 'NSDate+TimeAgo'\n")
       end
       
-      answer = pod_ask("Add pod pop?")
-      if answer == "y"
- 	    podfile.write("pod 'pop', '~> 1.0'")
+      answer = pod_ask("Add FacebookPop?")
+      if answer == true
+ 	    podfile.write("pod 'pop', '~> 1.0'\n")
       end
       
-      answer = pod_ask("Add pod SVProgressHUD?")
-      if answer == "y"
- 	    podfile.write("pod 'SVProgressHUD'")
+      answer = pod_ask("Add SVProgressHUD?")
+      if answer == true
+ 	    podfile.write("pod 'SVProgressHUD'\n")
       end
       
-      answer = pod_ask("Add pod OHHTTPStubs?")
-      if answer == "y"
- 	    podfile.write("pod 'OHHTTPStubs'")
+      answer = pod_ask("Add OHHTTPStubs?")
+      if answer == true
+ 	    podfile.write("pod 'OHHTTPStubs'\n")
       end
+      
+      answer = pod_ask("Add InputValidators?")
+      if answer == true
+ 	    podfile.write("pod 'InputValidators'\n")
+      end
+      
+      puts "Test Target pods"
+      puts "------------------------------"
+      
+      project_name = @configurator.project_name
+      podfile.write("target :" + project_name + "Tests do\n")
+      
+      answer = pod_ask("Add KIF?")
+      if answer == true
+ 	    podfile.write("  pod 'KIF'\n")
+      end
+      
+      answer = pod_ask("pod 'OCMock'")
+      if answer == true
+ 	    podfile.write("  pod 'OCMock'\n")
+      end
+      
+      answer = pod_ask("Add Expecta?")
+      if answer == true
+ 	    podfile.write("  pod 'Expecta'\n")
+      end
+      
+      answer = pod_ask("Add Specta?")
+      if answer == true
+ 	    podfile.write("  pod 'Specta'\n")
+      end
+      
+      podfile.write("end")
     end
 
     def run_setup_questions
