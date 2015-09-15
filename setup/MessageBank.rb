@@ -69,19 +69,20 @@ module Vivant
     
     def pod_ask(question)
       answer = ""
-      condition = false
+      answerYes = false
       loop do
         puts "\n#{question}"
 
         show_prompt
         answer = gets.chomp
-        condition = (answer == 'y') || (answer == 'Y') || (answer == 'n') || (answer == 'N')
+        valid = (answer == 'y') || (answer == 'Y') || (answer == 'n') || (answer == 'N')
+        answerYes = (answer == 'y') || (answer == 'Y')
 
-        break if condition == true
+        break if valid == true
 
         print "\nYou need to provide an answer."
       end
-      condition
+      answerYes
     end
 
 	def pod_setup
@@ -125,7 +126,7 @@ module Vivant
  	    podfile.write("pod 'InputValidators'\n")
       end
       
-      puts "Test Target pods"
+      puts "\nTest Target pods"
       puts "------------------------------"
       
       project_name = @configurator.project_name
