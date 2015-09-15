@@ -153,6 +153,8 @@ module Vivant
       end
       
       podfile.write("end")
+      podfile.close
+
     end
 
     def run_setup_questions
