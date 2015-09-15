@@ -1,13 +1,15 @@
 //
-//  ViewController.h
+//  Manager.h
 //  PROJECTNAME
 //
 //  Created by USERNAME on TODAY.
 //  Copyright (c) 2015 Vivant. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface Manager : NSObject
+
++ (instancetype)sharedInstance;
 
 @end

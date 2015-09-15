@@ -14,6 +14,8 @@
 		96F333591A042EA8006124F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F333571A042EA8006124F1 /* LaunchScreen.xib */; };
 		96F333651A042EA8006124F1 /* PROJECTNAMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F333641A042EA8006124F1 /* PROJECTNAMETests.m */; };
 		A563B44C1BA7F2DA0020171F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A563B44B1BA7F2DA0020171F /* Images.xcassets */; };
+		A592DE3D1BA7FA9C0082EE68 /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A592DE3C1BA7FA9C0082EE68 /* SampleModel.m */; };
+		A592DE401BA7FC3E0082EE68 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = A592DE3F1BA7FC3E0082EE68 /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		96F333631A042EA8006124F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F333641A042EA8006124F1 /* PROJECTNAMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTNAMETests.m; sourceTree = "<group>"; };
 		A563B44B1BA7F2DA0020171F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A592DE3B1BA7FA9C0082EE68 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = Model/SampleModel.h; sourceTree = "<group>"; };
+		A592DE3C1BA7FA9C0082EE68 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = Model/SampleModel.m; sourceTree = "<group>"; };
+		A592DE3E1BA7FC3E0082EE68 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = Service/Manager.h; sourceTree = "<group>"; };
+		A592DE3F1BA7FC3E0082EE68 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = Service/Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		96F333471A042EA8006124F1 /* PROJECTNAME */ = {
 			isa = PBXGroup;
 			children = (
+				A592DE351BA7F96D0082EE68 /* Model */,
+				A592DE331BA7F9580082EE68 /* Controller */,
+				A592DE361BA7F9A30082EE68 /* Service */,
+				A592DE341BA7F9650082EE68 /* View */,
+				A592DE371BA7F9F80082EE68 /* Resources */,
 				96F3334C1A042EA8006124F1 /* AppDelegate.h */,
 				96F3334D1A042EA8006124F1 /* AppDelegate.m */,
-				96F3334F1A042EA8006124F1 /* ViewController.h */,
-				96F333501A042EA8006124F1 /* ViewController.m */,
-				96F333521A042EA8006124F1 /* Main.storyboard */,
-				96F333571A042EA8006124F1 /* LaunchScreen.xib */,
-				A563B44B1BA7F2DA0020171F /* Images.xcassets */,
 				96F333481A042EA8006124F1 /* Supporting Files */,
 			);
 			path = PROJECTNAME;
@@ -117,6 +123,50 @@
 				96F333631A042EA8006124F1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A592DE331BA7F9580082EE68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96F3334F1A042EA8006124F1 /* ViewController.h */,
+				96F333501A042EA8006124F1 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A592DE341BA7F9650082EE68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A592DE351BA7F96D0082EE68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A592DE3B1BA7FA9C0082EE68 /* SampleModel.h */,
+				A592DE3C1BA7FA9C0082EE68 /* SampleModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A592DE361BA7F9A30082EE68 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A592DE3E1BA7FC3E0082EE68 /* Manager.h */,
+				A592DE3F1BA7FC3E0082EE68 /* Manager.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A592DE371BA7F9F80082EE68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96F333521A042EA8006124F1 /* Main.storyboard */,
+				96F333571A042EA8006124F1 /* LaunchScreen.xib */,
+				A563B44B1BA7F2DA0020171F /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +214,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Phunware Inc.";
+				ORGANIZATIONNAME = Vivant;
 				TargetAttributes = {
 					96F333441A042EA8006124F1 = {
 						CreatedOnToolsVersion = 6.1;
@@ -222,6 +272,8 @@
 				96F333511A042EA8006124F1 /* ViewController.m in Sources */,
 				96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */,
 				96F3334B1A042EA8006124F1 /* main.m in Sources */,
+				A592DE401BA7FC3E0082EE68 /* Manager.m in Sources */,
+				A592DE3D1BA7FA9C0082EE68 /* SampleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
