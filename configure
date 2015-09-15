@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# modified from CocoaPods lib template
+# https://github.com/CocoaPods/pod-template
+
+$current_dir = File.dirname(File.expand_path(__FILE__))
+Dir[File.join($current_dir, "setup/*.rb")].each do |file|
+  require_relative(file)
+end
+
+projectname = ARGV.shift
+Vivant::TemplateConfigurator.new(projectname).run
