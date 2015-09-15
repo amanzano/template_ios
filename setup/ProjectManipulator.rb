@@ -60,7 +60,7 @@ module Vivant
     end
 
     def replace_internal_project_settings
-      invalid_formats = [".png", ".jpg", ".rb"]
+      invalid_formats = [".png", ".jpg", ".rb", ".mobileprovision"]
 
       Dir.glob(project_folder + "/**/**/**/**").each do |name|
         next if Dir.exists? name
