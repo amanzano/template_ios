@@ -63,7 +63,7 @@ module Vivant
       arcconfig.write('"project_id" : "' + project_name + ' iOS - Refactor",\n')
       arcconfig.write('"conduit_uri" : "http://phab.vivant.com.au/"\n')
       arcconfig.write('}')
-      arconfig.close
+      arcconfig.close
     end
 
     def validate_user_details
