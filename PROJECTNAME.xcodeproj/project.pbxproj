@@ -10,12 +10,12 @@
 		96F3334B1A042EA8006124F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3334A1A042EA8006124F1 /* main.m */; };
 		96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3334D1A042EA8006124F1 /* AppDelegate.m */; };
 		96F333651A042EA8006124F1 /* PROJECTNAMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F333641A042EA8006124F1 /* PROJECTNAMETests.m */; };
-		A5581C1D1BABA85900C29CA1 /* UIColor+PROJECTNAME.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C1C1BABA85900C29CA1 /* UIColor+PROJECTNAME.m */; };
 		A5581C201BABA89000C29CA1 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C1F1BABA89000C29CA1 /* Manager.m */; };
 		A5581C231BABA89F00C29CA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C221BABA89F00C29CA1 /* ViewController.m */; };
 		A5581C261BABA8B100C29CA1 /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C251BABA8B100C29CA1 /* SampleModel.m */; };
 		A5581C281BABE8B100C29CA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5581C271BABE8B100C29CA1 /* LaunchScreen.xib */; };
 		A5581C2A1BABE8B700C29CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5581C291BABE8B700C29CA1 /* Main.storyboard */; };
+		A5581C2D1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */; };
 		A563B44C1BA7F2DA0020171F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A563B44B1BA7F2DA0020171F /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,6 @@
 		96F3335E1A042EA8006124F1 /* PROJECTNAMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PROJECTNAMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F333631A042EA8006124F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F333641A042EA8006124F1 /* PROJECTNAMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTNAMETests.m; sourceTree = "<group>"; };
-		A5581C1B1BABA85900C29CA1 /* UIColor+PROJECTNAME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PROJECTNAME.h"; path = "Helpers/Categories/UIColor+PROJECTNAME.h"; sourceTree = "<group>"; };
-		A5581C1C1BABA85900C29CA1 /* UIColor+PROJECTNAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PROJECTNAME.m"; path = "Helpers/Categories/UIColor+PROJECTNAME.m"; sourceTree = "<group>"; };
 		A5581C1E1BABA89000C29CA1 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = Helpers/Services/Manager.h; sourceTree = "<group>"; };
 		A5581C1F1BABA89000C29CA1 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = Helpers/Services/Manager.m; sourceTree = "<group>"; };
 		A5581C211BABA89F00C29CA1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MVC/Controllers/ViewController.h; sourceTree = "<group>"; };
@@ -48,6 +46,8 @@
 		A5581C251BABA8B100C29CA1 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = MVC/Models/SampleModel.m; sourceTree = "<group>"; };
 		A5581C271BABE8B100C29CA1 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Resources/XIBs/LaunchScreen.xib; sourceTree = "<group>"; };
 		A5581C291BABE8B700C29CA1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		A5581C2B1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PROJECTNAME.h"; path = "Helpers/Categories/UIColor+PROJECTNAME.h"; sourceTree = "<group>"; };
+		A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PROJECTNAME.m"; path = "Helpers/Categories/UIColor+PROJECTNAME.m"; sourceTree = "<group>"; };
 		A563B44B1BA7F2DA0020171F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,8 +149,8 @@
 		A5581C101BABA77D00C29CA1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				A5581C1B1BABA85900C29CA1 /* UIColor+PROJECTNAME.h */,
-				A5581C1C1BABA85900C29CA1 /* UIColor+PROJECTNAME.m */,
+				A5581C2B1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.h */,
+				A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -330,9 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5581C1D1BABA85900C29CA1 /* UIColor+PROJECTNAME.m in Sources */,
 				96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */,
 				96F3334B1A042EA8006124F1 /* main.m in Sources */,
+				A5581C2D1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m in Sources */,
 				A5581C201BABA89000C29CA1 /* Manager.m in Sources */,
 				A5581C231BABA89F00C29CA1 /* ViewController.m in Sources */,
 				A5581C261BABA8B100C29CA1 /* SampleModel.m in Sources */,
