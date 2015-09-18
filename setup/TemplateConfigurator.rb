@@ -28,9 +28,10 @@ module Vivant
       @message_bank.pod_setup
       	
       clean_template_files
-      reinitialize_git_repo
       setup_arc
       run_pod_install
+      reinitialize_git_repo
+      goto_project
 
       @message_bank.farewell_message
     end
@@ -66,6 +67,10 @@ module Vivant
       arcconfig.write("  \"conduit_uri\" : \"http://phab.vivant.com.au/\"\n")
       arcconfig.write("}")
       arcconfig.close
+    end
+    
+    def goto_project
+        Dir.chdir project_name
     end
 
     def validate_user_details
