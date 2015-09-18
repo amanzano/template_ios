@@ -55,6 +55,8 @@ module Vivant
       `git init`
       `git add -A`
       `git commit -m "Initial commit"`
+      `git checkout -b "develop"`
+      puts "Created 'develop' branch"
     end
     
     def setup_arc
