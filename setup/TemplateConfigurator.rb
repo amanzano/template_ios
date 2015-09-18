@@ -62,7 +62,7 @@ module Vivant
       arcconfig = File.open(".arcconfig", "w")
       arcconfig.write("{\n")
       arcconfig.write("  \"project_id\" : \"" + project_name + " iOS\",\n")
-      arcconfig.write("  \"conduit_uri\" : \"http://phab.vivant.com.au/\"\n")
+      arcconfig.write("  \"conduit_uri\" : \"https://phab.corp.vivant.com.au/\"\n")
       arcconfig.write("}")
       arcconfig.close
     end
