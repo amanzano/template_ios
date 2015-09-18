@@ -46,6 +46,10 @@ module Vivant
       # rename tests
       File.rename(project_folder + "/PROJECTNAMETests/PROJECTNAMETests.m", project_folder + "/PROJECTNAMETests/" + @projectname + "Tests.m")
       
+      #rename categories
+      File.rename(project_folder + "/PROJECTNAME/Helpers/Categories/UIColor+PROJECTNAME.h", project_folder + "/PROJECTNAME/Helpers/Categories/UIColor+" + @projectname + ".h")
+      File.rename(project_folder + "/PROJECTNAME/Helpers/Categories/UIColor+PROJECTNAME.m", project_folder + "/PROJECTNAME/Helpers/Categories/UIColor+" + @projectname + ".m")
+      
     end
 
     def rename_project_folder
