@@ -2,7 +2,6 @@
 //  PROJECTNAMETests.m
 //  PROJECTNAMETests
 //
-//  Created by USERNAME on TODAY.
 //  Copyright (c) 2015 Vivant. All rights reserved.
 //
 
