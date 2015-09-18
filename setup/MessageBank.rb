@@ -35,7 +35,7 @@ module Vivant
     def ask(question)
       answer = ""
       loop do
-        puts "\n#{question}?"
+        puts "\n#{question}? (y/n)"
 
         show_prompt
         answer = gets.chomp
