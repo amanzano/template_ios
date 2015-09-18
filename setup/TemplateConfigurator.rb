@@ -29,6 +29,7 @@ module Vivant
       	
       clean_template_files
       reinitialize_git_repo
+      setup_arc
       run_pod_install
 
       @message_bank.farewell_message
@@ -54,6 +55,15 @@ module Vivant
       `git init`
       `git add -A`
       `git commit -m "Initial commit"`
+    end
+    
+    def setup_arc
+      arcconfig = File.open(".arcconfig", "w")
+      arcconfig.write('{\n')
+      arcconfig.write('"project_id" : "' + project_name + ' iOS - Refactor",\n')
+      arcconfig.write('"conduit_uri" : "http://phab.vivant.com.au/"\n')
+      arcconfig.write('}')
+      arconfig.close
     end
 
     def validate_user_details
