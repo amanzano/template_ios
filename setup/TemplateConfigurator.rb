@@ -31,7 +31,6 @@ module Vivant
       setup_arc
       run_pod_install
       reinitialize_git_repo
-      goto_project
 
       @message_bank.farewell_message
     end
@@ -57,7 +56,6 @@ module Vivant
       `git add -A`
       `git commit -m "Initial commit"`
       `git checkout -b "develop"`
-      puts "Created 'develop' branch"
     end
     
     def setup_arc
@@ -67,10 +65,6 @@ module Vivant
       arcconfig.write("  \"conduit_uri\" : \"http://phab.vivant.com.au/\"\n")
       arcconfig.write("}")
       arcconfig.close
-    end
-    
-    def goto_project
-        Dir.chdir project_name
     end
 
     def validate_user_details
