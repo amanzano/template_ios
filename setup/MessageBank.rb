@@ -125,6 +125,11 @@ module Vivant
       if answer == true
  	    podfile.write("pod 'InputValidators'\n")
       end
+
+      answer = pod_ask("Add GoogleAnalytics?")
+      if answer == true
+ 	    podfile.write("pod 'GoogleAnalytics'\n")
+      end
       
       puts "\nTest Target pods"
       puts "------------------------------"
