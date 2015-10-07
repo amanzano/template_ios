@@ -10,7 +10,6 @@
 		96F3334B1A042EA8006124F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3334A1A042EA8006124F1 /* main.m */; };
 		96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3334D1A042EA8006124F1 /* AppDelegate.m */; };
 		96F333651A042EA8006124F1 /* PROJECTNAMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F333641A042EA8006124F1 /* PROJECTNAMETests.m */; };
-		A5581C201BABA89000C29CA1 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C1F1BABA89000C29CA1 /* Manager.m */; };
 		A5581C231BABA89F00C29CA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C221BABA89F00C29CA1 /* ViewController.m */; };
 		A5581C261BABA8B100C29CA1 /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C251BABA8B100C29CA1 /* SampleModel.m */; };
 		A5581C281BABE8B100C29CA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5581C271BABE8B100C29CA1 /* LaunchScreen.xib */; };
@@ -38,8 +37,6 @@
 		96F3335E1A042EA8006124F1 /* PROJECTNAMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PROJECTNAMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F333631A042EA8006124F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F333641A042EA8006124F1 /* PROJECTNAMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTNAMETests.m; sourceTree = "<group>"; };
-		A5581C1E1BABA89000C29CA1 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = Helpers/Services/Manager.h; sourceTree = "<group>"; };
-		A5581C1F1BABA89000C29CA1 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = Helpers/Services/Manager.m; sourceTree = "<group>"; };
 		A5581C211BABA89F00C29CA1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MVC/Controllers/ViewController.h; sourceTree = "<group>"; };
 		A5581C221BABA89F00C29CA1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MVC/Controllers/ViewController.m; sourceTree = "<group>"; };
 		A5581C241BABA8B100C29CA1 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = MVC/Models/SampleModel.h; sourceTree = "<group>"; };
@@ -213,8 +210,6 @@
 		A592DE361BA7F9A30082EE68 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A5581C1E1BABA89000C29CA1 /* Manager.h */,
-				A5581C1F1BABA89000C29CA1 /* Manager.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -333,7 +328,6 @@
 				96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */,
 				96F3334B1A042EA8006124F1 /* main.m in Sources */,
 				A5581C2D1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m in Sources */,
-				A5581C201BABA89000C29CA1 /* Manager.m in Sources */,
 				A5581C231BABA89F00C29CA1 /* ViewController.m in Sources */,
 				A5581C261BABA8B100C29CA1 /* SampleModel.m in Sources */,
 			);
