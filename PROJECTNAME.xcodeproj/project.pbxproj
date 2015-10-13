@@ -16,6 +16,7 @@
 		A5581C2A1BABE8B700C29CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5581C291BABE8B700C29CA1 /* Main.storyboard */; };
 		A5581C2D1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */; };
 		A563B44C1BA7F2DA0020171F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A563B44B1BA7F2DA0020171F /* Images.xcassets */; };
+		A596A5E71BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A596A5E61BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		A5581C2B1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PROJECTNAME.h"; path = "Helpers/Categories/UIColor+PROJECTNAME.h"; sourceTree = "<group>"; };
 		A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PROJECTNAME.m"; path = "Helpers/Categories/UIColor+PROJECTNAME.m"; sourceTree = "<group>"; };
 		A563B44B1BA7F2DA0020171F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A596A5E51BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+PROJECTNAMEFont.h"; path = "Helpers/Categories/UIFont+PROJECTNAMEFont.h"; sourceTree = "<group>"; };
+		A596A5E61BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+PROJECTNAMEFont.m"; path = "Helpers/Categories/UIFont+PROJECTNAMEFont.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 			children = (
 				A5581C2B1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.h */,
 				A5581C2C1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m */,
+				A596A5E51BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.h */,
+				A596A5E61BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A596A5E71BC5F1DC00550D72 /* UIFont+PROJECTNAMEFont.m in Sources */,
 				96F3334E1A042EA8006124F1 /* AppDelegate.m in Sources */,
 				96F3334B1A042EA8006124F1 /* main.m in Sources */,
 				A5581C2D1BABEA8D00C29CA1 /* UIColor+PROJECTNAME.m in Sources */,
