@@ -12,7 +12,7 @@ then
 fi
 
 # copy the template repository
-git clone https://github.com/amanzano/template_ios.git "${FOLDER_NAME}"
+git clone ssh://git@phab.corp.vivant.com.au/diffusion/IS/ios-seed.git "${FOLDER_NAME}"
 
 # jump into the folder and run the configure script
 cd "./${FOLDER_NAME}"
